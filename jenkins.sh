@@ -10,6 +10,7 @@ sudo yum install java-21-amazon-corretto -y
 yum install jenkins -y
 sudo mount -o remount,size=2G /tmp
 #STEP-4: Start and check the JENKINS Status
+systemctl enable jenkins.service
 systemctl start jenkins.service
 systemctl status jenkins.service
 
